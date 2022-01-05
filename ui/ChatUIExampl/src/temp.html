@@ -1,0 +1,68 @@
+<br> 
+<div class="card text-center w-50" style="margin: auto;">
+  <!-- <div class="card-header">
+    Featured
+  </div> -->
+  <div class="card-body">
+
+    <div class="container">
+     <h3> <strong>{{username === ''? "CHAT APP": "Hi " + username}}</strong> </h3>
+      <div #myDiv class="list-group list-group-flush border-bottom scrollarea">
+
+          <!-- <div class="list-group-item list-group-item-action py-3 lh-tight">
+            <input class="fs-5 fw-semibold" placeholder="Enter a username" [(ngModel)]="username" hidden />
+          </div> -->
+
+          <!-- <div class="card m-2 list-group-item list-group-item-action py-3 lh-tight textsClass" *ngFor="let msg of messages.slice().reverse();">
+            <div class="d-flex w-100 align-items-center justify-content-between">
+              <strong class="mb-1">{{msg.username}}</strong>
+              <small class="text-muted">{{today}}</small>
+            </div>
+            <div class="col-10 mb-1 small" style="text-align: left;"> {{msg.message}} </div>
+          </div> -->
+
+          <div class="textsClass" *ngFor="let msg of messages;">
+            <div class="bubbleWrapper" *ngIf="msg.username != username">
+              <div class="inlineContainer">
+                <!-- <img class="inlineIcon" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"> -->
+                <div class="otherBubble other">
+                  {{msg.message}} <br>
+                  <span class="badge bg-transparent rounded-pill pull-right"> [{{msg.datetime.split(" ")[1] + " " + msg.datetime.split(" ")[2]}}] </span>
+                </div>
+              </div><span class="other">{{msg.username}}</span>
+              
+            </div>
+            
+            <div class="bubbleWrapper" *ngIf="msg.username == username">
+              <div class="inlineContainer own">
+                <!-- <img class="inlineIcon" src="https://www.pinclipart.com/picdir/middle/205-2059398_blinkk-en-mac-app-store-ninja-icon-transparent.png"> -->
+                <div class="ownBubble own">
+                  {{msg.message}} 
+                  <span class="badge bg-transparent rounded-pill pull-right"> [{{msg.datetime.split(" ")[1] + " " + msg.datetime.split(" ")[2]}}] </span>
+                </div>
+              </div><span class="own">{{msg.username}}</span>
+            </div>
+          </div>
+        <br>
+      </div>
+
+      <div class="container row" style="text-align: center;">
+        <input type="text" class="fs-5 fw-semibold w-50 col-9 m-2" (keyup.enter)="submit()" placeholder="Write your message" [(ngModel)]="message" />
+        <button type="submit" (click)="submit()" class="btn btn-info text-white btn-sm w-20 col-1 m-2"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+          </svg>  
+        </button>
+        <button type="button" (click)="changeUsername()" class="btn btn-success btn-sm w-20 col-2 m-2">Set Username</button>
+      </div>
+    </div>
+
+    <!-- <div class="card-footer text-muted">
+      2 days ago
+    </div> -->
+  </div> 
+
+  </div>
+
+
+

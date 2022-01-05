@@ -1,0 +1,10 @@
+D:\AngularProjects\ChatDemo\ChatDemo\obj\Release\netcoreapp3.1\PubTmp\Out\ChatDemo.exe
+D:\AngularProjects\ChatDemo\ChatDemo\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+D:\AngularProjects\ChatDemo\ChatDemo\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+D:\AngularProjects\ChatDemo\ChatDemo\obj\Release\netcoreapp3.1\PubTmp\Out\ChatDemo.dll
+D:\AngularProjects\ChatDemo\ChatDemo\obj\Release\netcoreapp3.1\PubTmp\Out\ChatDemo.deps.json
+D:\AngularProjects\ChatDemo\ChatDemo\obj\Release\netcoreapp3.1\PubTmp\Out\ChatDemo.runtimeconfig.json
+D:\AngularProjects\ChatDemo\ChatDemo\obj\Release\netcoreapp3.1\PubTmp\Out\ChatDemo.pdb
+D:\AngularProjects\ChatDemo\ChatDemo\obj\Release\netcoreapp3.1\PubTmp\Out\NaCl.dll
+D:\AngularProjects\ChatDemo\ChatDemo\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
+D:\AngularProjects\ChatDemo\ChatDemo\obj\Release\netcoreapp3.1\PubTmp\Out\PusherServer.dll
